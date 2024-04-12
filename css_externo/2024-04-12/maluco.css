@@ -1,0 +1,17 @@
+*{
+    font-family: 'Times New Roman', Times, serif;
+    font: 400;
+
+}
+
+.conta{
+    border: solid 2px;
+    font-size: 2em;
+    background-color: rgb(251, 251, 146) ;
+    text-align: center;
+
+}
+
+h1{
+    text-align: center;
+}
