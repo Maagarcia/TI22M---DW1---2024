@@ -1,9 +1,5 @@
-h1{
-    color:darkred;
-    background-color: burlywood;
-    text-align: center;
 
-}
+
 span{
     color: rgb(0, 5, 139);
 }
@@ -17,3 +13,4 @@ joao{
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap')
+

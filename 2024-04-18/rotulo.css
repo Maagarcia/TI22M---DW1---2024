@@ -1,0 +1,50 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Shadows+Into+Light&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+.titulo{
+        font-family: "Anton", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        text-align: center;
+}
+
+.cabecalho{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight:50;
+    font-style: normal;
+    text-align: center;
+}
+
+.texto{
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+}
+
+.versiculo{
+    font-family: "Shadows Into Light", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+}
+
+.importante{
+    color: green;
+    text-align: center;
+    font-weight: bold;
+}
+
+.desafio{
+    background-color: gray;
+    font-style: italic;
+    text-align: center;
+    font-weight: 100;
+}
+bolder{
+    font-weight: bolder;
+}
