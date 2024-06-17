@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Special+Elite&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap');
+
+
+/* aqui especificamos os valores fixos de variaveis que usamos ao decorrer do site */
+:root{
+    --cordofundo: rgb(0,0,0);
+    --cordomenu: rgb(125, 12, 12);
+    --cordafonte: rgb(175, 0, 0);
+    --fontemenu: "Rye", serif;
+    --fonteh1:"Special Elite", system-ui;
+    --fontephome:"Caveat", cursive;
+}
+
+
+/* reset geral no site */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+
+/* configuração do corpo do site em geral, ajuste no scroll na hora de clicar em um botão */
+body{
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+    overflow-x:hidden;
+}
+
+
+/* container é div pai de menu, ele gerencia o espaço no qual o menu está incluido */
+.container{
+    width:  100vw;
+    height: 200px;
+    background-color: var(--cordomenu);
+    justify-content: center;
+    align-items: center;
+    
+    
+
+}
+
+/* menu justamente identifica como a id menu e administra o espaçamento entre os elementos dentro dele*/
+#menu {
+    justify-content: space-around;
+    align-items: center;
+    display: flex;
+
+}
+
+ul#menu a{
+
+    text-align: center;
+    color: black;
+    font-size: larger;
+    align-content: center;
+    text-decoration: none;
+    font-family: var(--fontemenu);
+    font-size:xx-large;
+    border: 1px solid black;
+    border-radius: 20%;
+
+}
+
+ul#menu li{
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+}
+
+#regras{
+    color:var(--cordafonte);
+    scroll-margin-top: -2px;
+
+
+}
+
+
+#regras h1{
+    text-align: center;
+    padding: 50px;
+    font-family: var(--fonteh1);
+    
+}
+
+#regras h2{
+    text-align: center;
+    font-family: var(--fontephome);
+    font-weight: 900;
+    font-size: xx-large ;
+
+
+
+}
+
+
+#home {
+    background-image: url(https://super.abril.com.br/wp-content/uploads/2013/07/old-west.png?w=1024&h=682&crop=1);
+    background-size: cover;
+    background-position: top;
+  /* background-repeat: no-repeat; */
+    background-attachment: fixed;
+    height: 250px;
+
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+
+
+}
+
+#home p{
+    padding: 150px;
+    font-family: var(--fontephome);
+    font-weight: 900;
+    font-size: xx-large ;
+}
+
+.principal{
+    display: flex;
+    align-items: flex-start;
+    padding: 100px;
+    flex-shrink: 1; 
+    gap: 100px;
+    margin:0px 100px ;
+    justify-content: center;
+}
+
+.coluna1{
+    background-color:black;
+    width: 500px;
+    font-family: var(--fonteh1);
+    font-size: larger;
+    line-height: 40px;
+}
+
+.coluna{
+    width: 100vw;
+    max-width: 650px;
+    text-align: justify;
+
+}
+
+
+
+#criacaodechar{
+    background-color: rgb(218, 189, 117);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+#criacaodechar h1{
+    color: var(--cordafonte);
+    text-align: center;
+    padding: 50px;
+    font-family: var(--fonteh1);
+}
+
+#criacaodechar table, #criacaodechar tr, #criacaodechar td{
+    border: 1px solid black;
+    border-collapse: collapse;
+    background-color: rgb(30, 30, 88);
+    padding:5px;
+}
+
+
+#criacaodechar .tabelas{
+    justify-content: space-between;
+    display:flex;
+    gap:0 50px
+
+}
+
+#botaoinicial{
+    position: fixed;
+    bottom: 55px;
+    right: 70px;
+    background-color:var(--cordomenu);
+    width: 69px;
+    height: 69px;
+    color: black;
+    display: flex;
+    border-radius: 100%;
+    align-items: center;
+    justify-content: center;
+    font-size: 3em;
+
+
+}
+    
+
+
+
+

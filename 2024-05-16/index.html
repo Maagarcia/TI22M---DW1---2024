@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        *{
+            padding:0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+
+        span{
+            border: green 2px solid;
+        }
+
+        div.container{
+            background-color: rgb(255, 255, 255);
+            height: 100vh;
+            width: 100vw;
+
+        }
+        
+        div#cabecalho{
+            background-color: rgb(255, 0, 0);
+            height: 100vw;
+            width: 100vw;
+        }
+
+        
+        
+        div#secao1{
+            background-color: rgb(144, 0, 0);
+            height: 100vw;
+            width: 100vw;
+        }
+
+        
+        div#secao2{
+            background-color: rgb(49, 0, 0);
+            height: 100vw;
+            width: 100vw;
+        }
+
+        ul.menu {
+            text-align: center;
+            color: black;
+        }
+
+        ul.menu li{
+            
+            width: 120px;
+            padding:10px;
+            background-color: black;
+            color: aliceblue;
+            display:inline-block
+        }
+
+        ul.menu li:hover{
+            
+            background-color: rgb(255, 255, 255);
+            color: rgb(0, 0, 0);
+            width: 120px;
+            padding:10px;   
+            transition: 0.3s;
+        }
+
+        
+        .menu a{
+            color: white;
+        }
+
+        .menu a:hover{
+            color: black;
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>      
+
+    <div class="container"> 
+        <ul class="menu">
+            <li>cabeçalho</li>
+            <li><a href="#secao1">seção 1</a></li>
+            <li><a href="#secao2">seção 2</a></li>
+
+        </ul>
+        <div id="cabecalho"><h3>cabeçalho</h3></div>
+
+        <div id="secao1"><h3>seção 1</h3></div>
+        <div id="secao2"><h3>seção 2</h3></div>      
+    
+    </div>
+
+    <span> bbb</span>
+    <span>CCC</span>
+
+</body>
+</html>
