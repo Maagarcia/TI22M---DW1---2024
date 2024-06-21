@@ -10,14 +10,15 @@
 <body>
     
     <a href="#menu" id="botaoinicial"><i class="bi bi-arrow-up-short"></i></a>
+
     
     <div class="container">
         <ul id="menu">
             <li><a href="">Home</a></li>
             <li><a href="#regras">Regras</a></li>
             <li><a href="#criacaodechar">Criação de Personagem</a></li>
-            <li><a href="">Criação de Mundo</a></li>
-            <li><a href="">Contatos</a></li>
+            <li><a href="#world">Criação de Mundo</a></li>
+            <li><a href="#contatos">Contatos</a></li>
         </ul>
     <div id="home">
         <p>Era uma vez no Velho Oeste...</p>
@@ -37,12 +38,32 @@
         <div class="principal">
 
             
-            <div class="coluna coluna1">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias vel excepturi expedita vero culpa rem ea tenetur totam. Deserunt temporibus accusantium enim dignissimos rem sunt sint id corporis amet error!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quis minus non voluptas laboriosam veniam voluptate ad dolorem dicta recusandae eum perspiciatis, beatae dolore, cumque facere libero rem a maiores aliquam!
+            <div class="coluna coluna1">
+                <p>Todo RPG de mesa tem regras funcionar nos trilhos. Tequila não é diferente. O Sistema funciona com um esquema de atributos, nos quais são Roubo, Combate, Labuta, Cavalaria, Físico. Cada um com suas utilidades para cada Build que o jogador queira fazer. </p>
+                <br>
+                
+                <p><span>Roubo:</span> Mantenham as carteiras seguras, senhoras e senhores. Mentir no Velho Oeste as vezes é o que decide se você vive ou não amanhã. Roubo é atributo chave para quem gosta de se pagar de espertão na mentira, roubar, situações de furtividade ou fazer algo sem ninguém ver.(1d12) </p>
+                <br>
+                <p><span>Combate:</span> As vezes nem tudo sai do jeito que você espera e alguns tiros tem que ser dados. Combate é atributo essencial pra quem curte da um pipoco por ai.(1d20)</p>
+                <br>
+                <p><span>Labuta:</span> Você trabalha com as mãos, sempre foi bom nisso. Labuta é pra quem tem manejo com o artesanal e gosta de fazer coisas com as mãos, como tratar ferimentos ou providenciar armas.(1d12)</p>
+                <br>
+                <p><span>Cavalaria:</span> Seu cavalo é seu melhor amigo. Cavalaria é o atributo pra quem confia no seu pangaré como se fosse um puro sangue inglês, isso define o quão bem é seu controle com os bichanos, não só cavalos.(1d100)</p>
+                <br>
+                <p><span>Físico:</span> Você é uma maquina de músculos, cada cicatriz tem uma história. Físico é atributo que define sua força em certas ocasiões, adiciona +1 no seu dano quando seu ataque é corpo a corpo.(1d12)</p>
+
             </div>
             
-            <div class="coluna coluna1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolor quod ratione, iste sit nihil molestiae labore exercitationem autem similique rerum totam dicta porro ducimus optio quo reiciendis? Asperiores, labore esse!Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus cupiditate dolorum optio similique labore, molestiae cumque delectus ipsum laudantium veniam libero repudiandae, ex aut ea rem voluptates maiores, soluta consequatur?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae labore obcaecati fuga quos praesentium minus veritatis assumenda dicta soluta? Quae vero libero nihil aspernatur ab placeat, nemo voluptas fuga labore.
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio aut assumenda rerum, praesentium debitis pariatur? Laboriosam saepe voluptatum iusto sit accusamus doloremque eveniet optio possimus molestias provident. Fugiat, hic nihil.
+            <div class="coluna coluna1">
+                <p>Tequila é um sistema que utiliza 1 dado de cada tipo, assim como especificado ao lado de cada atributo. Cada ponto no atributo é um dado da espécie correspondente a mais. A questão do dano é variada com base na fonte origem do dano, por exemplo, um soco dói menos que um tiro de revólver, logo um soco tem dano de 1d3+ Físico, enquanto um revólver tem dano de 1d6, agora um tiro de escopeta daria mais ainda, sendo 2d6. Variando conforme o tipo da fonte/arma</p>
+                <br>
+                <p>As vezes ficar quieto salva sua vida. <span2>Furtividade</span2> é uma condição que alguém pode ter que faz com que os outros não o detectem, o indivíduo em furtividade ganha +5 no valor do dado em combate se for a longa distância, se o furtivo conseguir chegar a uma distância corpo a corpo, o ataque é certeiro.</p>
+                <br>
+                <p>Porrada todo mundo leva, não importa se é da vida ou de um bêbado num bar, mas chega um ponto aonde ninguém mais aguenta e acaba por apagar no chão ou até ir dessa pra melhor. Os <span2>Pontos de vida</span2> é algo que todos sempre devem estar sempre ligado, se alguém, de alguma forma, conseguir tomar mais da metade da vida em dano, ficará com um dano permanente e alguma sequela física ou mental (definida pelo mestre)</p>
+                <br>
+                <p>Ninguém quer ficar exposto durante uma trocação de pipoco, então as vezes usar um barril, uma mesa, ou até mesmo um civil como proteção pode te dar vantagens contra o fogo inimigo. O <span2>Cover</span2> é uma mecânica que permite o jogador se sentir mais seguro em certas ocasiões, dando para o inimigo -3 no valor do dado em testes de combate</p>
+
+
             </div>
 
 
@@ -50,67 +71,589 @@
 
 
 
-        <p></p>
 
     </div>
     <div id="criacaodechar">
-        <h1>papapapapap</h1>
+        <h1>Criação de Personagens</h1>
+        <h2>"Preciso me encontrar nesse mundão"</h2>
+
+        <p>Para jogar, você precisa de um personagem para isso, é óbvio. E até para isso, tequila segue algumas regras para a confecção </p>
+        <br>
+        <p>Na criação de Personagens, todos tem 5 pontos para distribuir entre os atributos. A Vida é definida como 2d20+físico. De padrão, todos vem como uma faca de sobrevivencia, armas de fogo são decididas com o mestre.</p>
+        <br>
+        <p>Na hora da criação do seu personagem, lembre-se que, agora seu personagem é sua criação, então tente dar uma personalidade para ele. De onde ele vem? Para onde ele vai? Qual sua história? Seu temperamento? As vezes você fica sem ter pra onde ir, então sinta-se livre para usar as tabelas abaixo para definir os traços do seu personagem</p>
+        
+
+        
+      
+        <h2>
+            
+                <span>Use um dado de 6 lados para os traços que você quiser.</span>
+           
+        </h2>
 
         <div class="tabelas">
-            <table>
-                <tr>
-                    <td>opa</td>
-                    <td>opaaaaaaaaaaaaaa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opaaaaaaaaaaaaaa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>skibidi</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opa</td>
-                </tr>
-            </table>
-            <table>
-                <tr>
-                    <td>opa</td>
-                    <td>opaaaaaaaaaaaaaa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opaaaaaaaaaaaaaa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opa</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>skibidi</td>
-                </tr>
-                <tr>
-                    <td>opa</td>
-                    <td>opa</td>
-                </tr>
-            </table>
+
+
+            <div class="principal">
+                <!-- Seu Ódio -->
+
+                        <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Mult. do Dado</th>
+                                <th scope="col">O que você mais Odeia?</th>
+                    
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>Injustiça</td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>Justiça</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Desonra</td>
+                            </tr>
+                          <tr>
+                              <td>4</td>
+                              <td>Mentira</td>
+                            </tr>
+                          <tr>
+                              <td>5</td>
+                              <td>Sobriedade</td>
+                            </tr>
+                          <tr>
+                              <td>6</td>
+                              <td>Trabalho</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                    
+                        <!-- Sua Fuga -->
+                        <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Mult. do Dado</th>
+                                <th scope="col">Do que voce está fugindo</th>
+                    
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>Do Estado</td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>De uma gangue</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>De um fantasma </td>
+                          <tr>
+                              <td>4</td>
+                              <td>De um caçador de recompensa</td>
+                          </tr>
+                          <tr>
+                              <td>5</td>
+                              <td>De um Culto</td>
+                            </tr>
+                          <tr>
+                              <td>6</td>
+                              <td>Da sua Noiva</td>
+                            </tr>
+                        </tbody>
+                        </table>
+                    
+                    
+                        <!-- Sua Luta -->
+                        <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">Mult. do Dado</th>
+                                <th scope="col">Sua Luta</th>
+                    
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                              <td>1</td>
+                              <td>Pela família</td>
+                          </tr>
+                          <tr>
+                              <td>2</td>
+                              <td>Por um Amor</td>
+                          </tr>
+                          <tr>
+                              <td>3</td>
+                              <td>Pela Lei</td>
+                            </tr>
+                          <tr>
+                              <td>4</td>
+                              <td>Por Deus</td>
+                            </tr>
+                          <tr>
+                              <td>5</td>
+                              <td>Com minha gangue</td>
+                            </tr>
+                          <tr>
+                              <td>6</td>
+                              <td>Pela Liberdade</td>
+                            </tr>
+                        </tbody>
+                        </table>
+
+
+                    <!-- O Segredo  -->
+                    <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Mult. do Dado</th>
+                            <th scope="col">Seu Segredo</th>
+                    
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Matei alguem importante</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Tenho uma impagavel divida com o estado</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Foragido da lei</td>
+                      </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Tenho uma doença transmissivel</td>
+                      </tr>
+                      <tr>
+                          <td>5</td>
+                          <td>Desertou a familia</td>
+                      </tr>
+                      <tr>
+                          <td>6</td>
+                          <td>Identidade Falsa</td>
+                      </tr>
+                    </tbody>
+                    </table>
+                    
+                    
+                    <!-- O Vício -->
+                    <table>
+                    <thead>
+                        <tr>
+                            <th scope="col">Mult. do Dado</th>
+                            <th scope="col">Seu Vício</th>
+                    
+                        </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                          <td>1</td>
+                          <td>Adrenalina</td>
+                      </tr>
+                      <tr>
+                          <td>2</td>
+                          <td>Alcool</td>
+                      </tr>
+                      <tr>
+                          <td>3</td>
+                          <td>Drogas</td>
+                        </tr>
+                      <tr>
+                          <td>4</td>
+                          <td>Em Algon Bizarro</td>
+                        </tr>
+                      <tr>
+                          <td>5</td>
+                          <td>Em Violência</td>
+                        </tr>
+                      <tr>
+                          <td>6</td>
+                          <td>Em Apostas</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    
+                </div>
+    
+            </div>
+            <p>O Velho Oeste é um lugar cruel e vil, e as vezes nem sempre balas resolvem as coisas...Por isso é sempre bom ter umas cartas na manga.</p>
+            <br>
+            <p>Todos os jogadores tem direito há uma habilidade da escolha que quiser dentre as abaixo. Algumas habilidades são ativaveis de acordo com o gosto do jogador, enquanto outras são passivas que ativam com algumas condições específicas. De acordo com a experiencia que o jogador adquire, ele pode subir de nivel, podendo adquirir mais uma habilidade da árvore de habilidades.</p>
+            <br>
+            <p>LEMBRANDO: O Jogador pode escolher sacrificar uma das suas habilidades para pegar uma vantagem, basta entrar em consenso com o mestre da mesa.</p>
+
+            <div class="principal">
+                
+                <div class="coluna colunachar">
+                        <p>
+                            <span>Duelista:</span> viva intensamente e atire duas vezes na mesma ação.
+                        </p>
+
+                        <p>
+                            <span>Briga de bar:</span> você vive em confusão não é mesmo? Pode pegar um objeto do cenário e arremessar ou utilizar contra um inimigo causando 1d6 + físico.
+                        </p>
+
+                        <p>
+                            <span>Crescido nas ruas:</span> consegue roubar furtivamente algo e tem +1 de testes de roubo, mentira e enganação.
+                        </p>
+
+                        <p>
+                            <span>Bom de lábia:</span> +2 pontos para testes de roubo, além disso, você detecta uma mentira sem precisar de teste.
+                        </p>
+
+                        <p>
+                            <span>Peão de rodeio:</span> você conhece cavalos como a palma da mão, toma a frente da cavalgada e ganha +10 pontos em testes de cavalaria.
+                        </p>
+
+                </div>
+                
+                <div class="coluna colunachar">
+                        <p>
+                            <span>Eu conheço os limites da vida, garoto:</span> pra que morrer aqui se voce pode ver o sol de amanhã raiar mais uma vez? Ao entrar em estado de  morrendo, rode um D6 para fazer um teste de Labuta (DT15) e sair do combate ileso.
+                        </p>
+
+                        <p>
+                            <span>A fúria do oeste:</span> Você não vai ir dessa sem antes levar o máximo de gente com você. Ao entrar em estado de morrendo, perde 1 ponto de combate, mas ganha +5 de físico e dano de qualquer fonte, dura a quantidade de rounds equivalente ao seus pontos de físico
+                        </p>
+
+                        <p>
+                            <span>Crueldade:</span>Ao acertar um golpe furtivo, adiciona +1 dado do tipo do dano na rolagem. Por exemplo, se o ataque foi realizado com um rifle, a rolagem do dano é dada com 1d6+2 (rifle) + 1d6 (Crueldade)
+                        </p>
+                </div>
+
+
+
+            </div>
+            <p>Como dito anteriormente, caso o jogador queira, ele pode renunciar uma habilidade para pegar em troca uma dessas vantagem.</p>
+            <br>
+            <p>OBS: O jogador só poderá fazer isso na criação do personagem. Ao subir de nível para desbloquear uma nova habilidade, o jogador não pode renunciar essa habilidade para ganhar uma nova vantagem</p>
+
+            <ul>
+                <li>
+                    +1 Físico
+                </li>
+                <li>
+                    +1 Roubo
+                </li>
+                <li>
+                    +1 Combate
+                </li>
+                <li>
+                    +1 Cavalaria
+                </li>
+                <li>
+                    Não é surpreendido por ataques surpresas
+                </li>
+            </ul>
+        <p>
+            E além de tudo, seu personagem precisa estar bem armado para o combate, mas lembre-se que você não pode carregar armamento para o exército inteiro. Saiba seus limites. Como ja dito, todo jogador começa com uma faca de sobrevivencia, que não ocupa espaço no seu inventário. </p>
+            <br>
+            <p>Por base, todos possuem 10 espaços para carregar suas tralhas, algumas coisas tendem a ocupar espaços maiores que outras, já há coisas que podem ser guardadas em qualquer buraco das suas calças</p>
+            
+
+            <div class="tabelas">
+                <div class="principal">
+                    <table width="1850">
+                        <thead>
+                            <tr>
+                                <th scope="col">Arma</th>
+                                <th scope="col">Dano</th>
+                                <th scope="col">Observação</th>
+                                <th scope="col">Preço</th>
+                                <th scope="col" width="200">Espaço</th>
+                    
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>Revolver Schrofield</td>
+                            <td>1d6</td>
+                            <td>--</td>
+                            <td>$30</td>
+                            <td>2</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>1911</td>
+                            <td>1d6</td>
+                            <td>--</td>
+                            <td>$45</td>
+                            <td>2</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Rifle de Peão</td>
+                            <td>1d6+1</td>
+                            <td>--</td>
+                            <td>$70</td>
+                            <td>3</td>
+                            
+                          </tr>
+                          <tr>
+                            <td>Rifle de repetição</td>
+                            <td>1d6+2</td>
+                            <td>--</td>
+                            <td>$100</td>
+                            <td>3</td>
+                        </tr>
+                          <tr>
+                            <td>Rifle de precisão</td>
+                            <td>2d6+4</td>
+                            <td>Necessita uma ação para renovar o ferrolho</td>
+                            <td>$200</td>
+                            <td>4</td>
+                          </tr>
+                          <tr>
+                            <td>Rifle do exército</td>
+                            <td>1d6+3</td>
+                            <td>Necessita uma ação para renovar o ferrolho</td>
+                            <td>$150</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td>Escopeta de cano duplo</td>
+                            <td>2d6 (perto); 1d6(médio); 1d3(longe)</td>
+                            <td>Apenas dois slots de balotes disponiveis/uma ação para recarregar</td>
+                            <td>$120</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td>Escopeta pump</td>
+                            <td>2d6 (perto); 1d6(médio); 1d3(longe)</td>
+                            <td>--</td>
+                            <td>$120</td>
+                            <td>3</td>
+                          </tr>
+                          <tr>
+                            <td>Faca</td>
+                            <td>1d6</td>
+                            <td>--</td>
+                            <td>$15</td>
+                            <td>--</td>
+                          </tr>
+                          <tr>
+                            <td>Arco</td>
+                            <td>1d6</td>
+                            <td>Flechas podem ser personalizadas</td>
+                            <td>$20</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Tomahawk</td>
+                            <td>1d6</td>
+                            <td>Arremessável</td>
+                            <td>$18</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Dinamite</td>
+                            <td>4d6(banana), 5d12(cacho)</td>
+                            <td>Arremessável/Área(5m/banana; 15/cacho)/1 round para detonar</td>
+                            <td>$10(banana); $80(cacho)</td>
+                            <td>1/5</td>
+                          </tr>
+                          <tr>
+                            <td>Chicote</td>
+                            <td>1d6+1</td>
+                            <td>Médio alcance</td>
+                            <td>$5</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Molotov</td>
+                            <td>2d12/round</td>
+                            <td>Médio alcance, requer um round para ser apagado</td>
+                            <td>--</td>
+                            <td>1</td>
+                          </tr>
+                          <tr>
+                            <td>Faca arremessavel</td>
+                            <td>1d6</td>
+                            <td>arremessavel</td>
+                            <td>$2</td>
+                            <td>1</td>
+
+                          </tr>
+                          <tr>
+                            <td>Mãos</td>
+                            <td>1d3</td>
+                            <td>--</td>
+                            <td>--</td>
+                            <td>--</td>
+
+                          </tr>
+                        </tbody>
+                        </table>
+                </div>
+            </div>
+            <p>Elementos como dinheiro e papeis não possuem carga.</p>
+            <br>
+        </div>
+     <div id="world">
+        <h1>Criação do mundo</h1>
+
+        <h2>Esse mundo é pequeno demais para nós dois</h2>
+
+
+        <p>Agora que os jogadores já se decidiram, é a vez do mestre.</p>
+        <p>A criação de mundo é algo que adiciona muito na imersão dos jogadores. Ninguém quer jogar em uma mesa chata e sem vida, mostre para eles o real perigo de suas ações, mas sem deixa-los limitados por medo delas. </p>
+        <p>Um bom mestre consegue trasmitir os sentimentos que ele planeja de forma que eles venham espontaneamente, mesmo que seus planos se frustrem. Queria deixar os jogadores tensos com o perigo? Crie uma ameaça de verdade, um vilão com um plano mirabolante, no qual os jogadores cairam exatamente na sua armadilha. Quer fazer um suspense? Crie um mistério ao redor de um assassinato repentino numa cidade pacata.</p>
+        <p>Não encare emoções como raiva e tristeza como negativas para a mesa. A pior coisa que alguém pode sentir sobre alguma produção é indiferença, tédio, se sua intenção ao matar um npc importante pro grupo era causar tristeza e os jogadores reagiram com raiva, <span>jogue lenha na fogueira</span>.</p>
+        <p>Mas pensar em um mundo do 0 é meio complicado. Tente separar em alguns tópicos para dar vida a sua campanha, tudo baseado no tema central e o objetivo dela</p>
+
+
+        <ul>
+            <li>
+                <span>Objetivo:</span> Pense no que você quer que seus jogadores passam, isso é o primeiro passo fundamental para criar uma campanha como mestre. Vamos supor que sua mesa se passa numa caça a uma gangue que vive nos fundos de uma caverna, e que no meio disso, eles resgatam uma senhorita que a gangue mantia prisioneira, tente planejar o que você quer que aconteça em cada momento, mas sem sair do objetivo principal. 
+            </li>
+            <li>
+                <span>História:</span> A história pode ser tanto uma backstory ou ser contata na hora, com o passar da campanha. Tente sempre dar um contexto, uma profundidade a mais no seu mundo, em que as vezes apenas você sabe caso precise vir a tona em algum momento da mesa. Vamos supor que o grupo chegue em uma cidade, no que essa cidade é bom? É um porto? Uma cidade ruralista? Uma capital? Instigue-os a saber mais sobre a história.
+            </li>
+            <li>
+                <span>Ambientação:</span> A descrição do ambiente é um dos pilares fundamentais para causar imersão, não precisa ser hiper-detalhado na descrição, mas não invente nem retire elementos do nada, seja sempre sucinto. Quando for descrever algum evento, pense no peso daquele acontecimento mesclado com o sentimento que você quer arrancar dos seus jogadores.
+            </li>
+            <li>
+                <span>Perigos:</span> As ameaças do mundo precisam ser algo que imponham tensão. Uma gangue qualquer? Isso você enfrenta todo dia. Faça ela ser a mais brutal, aonde sua menção ja causa medo no estado. Se o inimigo é o próprio estado, faça-os sempre bem vestidos, com armas de última geração. O inimigo as vezes é quem rouba a cena, apenas ajuste o tom necessário e você terá um problema a altura dos jogadores do seu grupo 
+            </li>
+            <li>
+                <span>NPC's:</span> Coloque um pouco a mais de vida no seu mundo, seu grupo precisará se comunicar com o universo criado, e um dialogo é a melhor forma de você passar as suas ideias. Faça-os com base no tom do lugar, ocasião e localização. Uma cidade grande haverá gente luxuosa e elegante. Uma fazenda haverá peões e rancheiros. E assim por diante, você popula o seu mundo.
+            </li>
+        </ul>
+
+        <p>Dependendo da situação, os jogadores podem adquirir alguns status, que infligem na jogabilidade. Alguns desses status podem ser.</p>
+
+        <div class="principal">
+            <div class=" colunaworld">
+                <p><span>Sufocamento:</span> Vamos supor que o Jogador foi parar na forca ou algo prendeu sua respiração. O jogador fica com status de sufocado e tem o um numero de rodadas igual ao seu Físico para se livrar de alguma forma, se as rodadas acabarem, o jogador desmaia ou morre.</p>
+                <p><span>Envenamento:</span> Uma cascavel cruzou seu caminho e você saiu na pior? Envenenamento reduz seu Físico para 0 e você toma 1d6 até se curar ou morrer. Veneno é algo que pode ser colocado em flechas, Tomahawks ou facas. Bebidas retardam somente o dano. Remédios/Xaropes tiram o efeito por completo.</p>
+                <p><span>Podridão:</span> Uma ferida não tratada pode apodrecer e infecionar, não é muito agradável visualmente e custa 1d6 de vida permanente, ou seja, o valor é descontado da sua vida máxima, não atual.</p>
+                <p><span>Sangramento:</span> Você se cortou feio, hein? Sangramento causa 1d4 de dano até ser estancado, levando um round e um teste de labuta, pode ser causado por objetos pontiagudos como Tomahawks, facas, facas arremessáveis e flechas.</p>
+            </div>
+            <div class="colunaworld">
+                <p><span>Queimado:</span> O que brilha também machuca. O jogador queima vivo e toma 2d6 até apagar o fogo ou morrer. Apagar fogo leva um round. Fogo é algo que pode ser colocado em flechas.</p>
+                <p><span>Fraturado:</span> Você caiu do cavalo e acabou por fraturar feio algum membro. O jogador toma 2d6+3 de dano e se o membro foi um braço, o jogador toma penalidade de -5 em combate, se for uma perna, o jogador se desloca metade do caminho usual. Necessita de repouso completo para se curar.</p>
+                <p><span>Morrendo:</span> Infelzmente chega para todo mundo, ao zerar seus pontos de vida, você entra em estado de morrendo, você tem rounds para ser acudido por alguém ou morrerá para sempre. Se o jogador for acudido a tempo, volta com 1-3 pontos de vida (dependendo do sucesso do teste de labuta de quem socorreu). Jogadores que ja passaram pelo estado de morrendo e acabam por zerar seus PV's novamente, morrem sem ter outra chance. Se a origem do dano que culminou o estado de morrendo vier de uma explosão ou fogo, o jogador morre sem entrar em estado de morrendo.</p>
+            </div>
+
+
         </div>
 
+        <p>Durante um combate, se um jogador conseguir um sucesso absoluto no dado, ou seja, tirar o maior valor do dado, ele tem direito de rolar novamente o dado, e se tirar o mesmo valor, ele rolará um d6 para ganhar um efeito especial durante o combate. O mesmo se aplica com o lado negativo, ou seja, tirar o menor valor duas vezes seguidas.</p>
+
+            <div class="principal">
+                <div class="tabelas">
+                    <table>
+                        <caption collor="white">Tabela do Critico</caption>
+                        <thead>
+                            <tr>
+                                <th>Valor</th>
+                                <th>Vantagem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Causa o dobro de Dano</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Atordoa um inimigo</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Causa Sangramento</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>+1d3 de dano</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>+5 de combate até final do combate</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Jogue duas vezes por round</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table>
+                        <caption>Tabela da falha</caption>
+                        <thead>
+                            <tr>
+                                <th>Valor</th>
+                                <th>Desvantagem</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Sua arma trava</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>-5 de combate até o fim do combate</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Perde o turno por medo</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Tropeça, gasta uma ação para se levantar</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>inspira o inimigo, inimigos ganham +5 de combate até o fim do combate</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>Atinge um aliado ou um civil, jogue 1d6, par = aliado; impar = civil</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+        
+    </div>
+
+
+
+    <div id="contatos">
+            <div class="box">
+                <div class="instagram">
+                    <a href="https://www.instagram.com/maagaarcia/?hl=pt"><i class="bi bi-instagram"></i></a>
+                </div>
+                <div class="twitter">
+                    <a href="https://x.com/matiolitos" id="twitter"><i class="bi bi-twitter"></i></a>
+                </div>
+
+                <div class="github">
+                    <a href="https://github.com/Maagarcia" id="github"><i class="bi bi-github"></i></a>
+                </div>
+
+            </div>
+
+            <div class="textocontato">
+                <p>Tequila é uma produção independente criado para fins de entretenimento. Material de maior qualidade no qual tequila foi inspirado por ser encontrado <a href="https://www.catarse.me/somdasseis">aqui</a></p>
+            </div>
+    </div>
+        
+
+    </div>
     </div>
 
 

@@ -32,7 +32,6 @@ body{
     overflow-x:hidden;
 }
 
-
 /* container é div pai de menu, ele gerencia o espaço no qual o menu está incluido */
 .container{
     width:  100vw;
@@ -80,7 +79,6 @@ ul#menu li{
 
 }
 
-
 #regras h1{
     text-align: center;
     padding: 50px;
@@ -97,7 +95,6 @@ ul#menu li{
 
 
 }
-
 
 #home {
     background-image: url(https://super.abril.com.br/wp-content/uploads/2013/07/old-west.png?w=1024&h=682&crop=1);
@@ -119,11 +116,14 @@ ul#menu li{
     font-family: var(--fontephome);
     font-weight: 900;
     font-size: xx-large ;
+    color: white;
+    text-shadow: 0 0 15px black;
+
 }
 
 .principal{
     display: flex;
-    align-items: flex-start;
+    align-items: flex-start; 
     padding: 100px;
     flex-shrink: 1; 
     gap: 100px;
@@ -132,56 +132,130 @@ ul#menu li{
 }
 
 .coluna1{
-    background-color:black;
+    background-color:rgb(0, 0, 0);
     width: 500px;
     font-family: var(--fonteh1);
     font-size: larger;
     line-height: 40px;
 }
 
+.colunachar p{
+    background-color:rgb(218, 189, 117);
+    width: 500px;
+    font-family: var(--fonteh1);
+    font-size: larger;
+    line-height: 40px;
+    margin-bottom: 50px;
+}
+
 .coluna{
     width: 100vw;
     max-width: 650px;
     text-align: justify;
+    column-gap: 10px;
+    line-height: 40px;
 
 }
-
-
 
 #criacaodechar{
     background-color: rgb(218, 189, 117);
     width: 100vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: flex; 
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column; 
 
 }
+
 #criacaodechar h1{
-    color: var(--cordafonte);
+    color: var(--cordofundo);
     text-align: center;
-    padding: 50px;
+    margin-top: 50px;
     font-family: var(--fonteh1);
+    justify-content: center;
 }
 
-#criacaodechar table, #criacaodechar tr, #criacaodechar td{
+#criacaodechar tr, #criacaodechar td{
     border: 1px solid black;
-    border-collapse: collapse;
-    background-color: rgb(30, 30, 88);
-    padding:5px;
+    font-family: var(--fonteh1);
+    font-size: large;
+    background-color: rgb(88, 44, 30);
+    padding:7px;
+    text-align: center;
+    
 }
 
+#criacaodechar th{
+    color: white;
+    background-color: black;
+    /* border:transparent 10px blue; */
+    font-family: var(--fontephome);
+    font-size: 1.5rem;
+
+
+}
+
+#criacaodechar table{
+    /* background-color: rgb(255, 255, 255); */
+    border: 2px solid black;
+        border-radius: 10%  ;
+        border-collapse:collapse;
+        margin:-30px;
+}
 
 #criacaodechar .tabelas{
     justify-content: space-between;
-    display:flex;
-    gap:0 50px
+    display:flex; 
+    gap:0px 50px;
+
+
+    
+}
+
+#criacaodechar h2{
+    font-family: var(--fontephome);
+    text-align: center;
+    font-size: xx-large;
+    font-weight: 800;
+    margin-top: 50px;
+    margin-bottom: 70px; 
+}
+
+#criacaodechar p{
+    font-family: var(--fonteh1);
+    /* text-align: ; */
+    /* padding-bottom: 50px; */
+    font-size: large;
+    line-height: 35px;
+    text-align: justify;
+    margin-right: 55px;
+    margin: 55px;
 
 }
 
+#criacaodechar p span{
+    font-size: 30px;
+    text-shadow: 0px 0px 17px rgb(0, 0, 0);
+    font-family: var(--fontemenu);
+
+}
+
+#regras p span{
+    font-size: xx-large;
+    text-shadow:0px 0px 20px red;
+    font-family: var(--fontemenu);
+
+}
+
+#regras p span2{
+    font-size: 30px;
+    text-shadow:0px 0px 10px red;
+}
+
+/* configuração para definir um botão para subir ao topo da página */
 #botaoinicial{
     position: fixed;
-    bottom: 55px;
+    bottom: 20px;
     right: 70px;
     background-color:var(--cordomenu);
     width: 69px;
@@ -195,8 +269,262 @@ ul#menu li{
 
 
 }
+
+#criacaodechar ul{
+
+    margin-left: 100px;
+    font-family: var(--fontemenu);
+    font-size:25px;
+    text-shadow:0px 0px 10px rgb(0, 0, 0) ;
+
+}
+
+#criacaodechar ul li{
+    margin-bottom: 15px;
+
+}
+
+#world{
+    width: 100vw;
+    background-color: rgb(114, 74, 50);
+
+}
+
+#world h1{
+    color: var(--cordofundo);
+    text-align: center;
+    padding: 50px;
+    font-family: var(--fonteh1);
+    justify-content: center;
+
+}
+
+#world h2{
+    font-family: var(--fontephome);
+    text-align: center;
+    margin-bottom: 100px;
+    font-size: xx-large;
+    font-weight: 800;
+
+}
+
+#world p{
+    font-family: var(--fonteh1);
+    /* text-align: ; */
+    /* padding-bottom: 50px; */
+    font-size: large;
+    line-height: 35px;
+    text-align: justify;
+    margin-right: 55px;
+    margin: 55px;
+
+}
+
+#world ul{
+    font-family: var(--fonteh1);
+    font-size: large;
+    margin-left: 50px;
+    text-decoration:none;
+    margin-right: 40px;
+    text-align: justify;
+    line-height: 45px;
+}
+
+#world ul li{
+    margin-bottom: 40px;
+
+    text-decoration: none;
+}
+
+#world ul span{
+    font-family: var(--fontemenu);
+    font-size: 35px;
+    text-shadow: 0px 0px 25px black;
+}
+#contatos{
+    background-color: rgb(0, 0, 0);
+    width: 100vw;
+    height: 200px;
+    display: flex;
+    justify-content: center
+    
+}
+
+#contatos .box{
+    background-color: rgb(0, 0, 0);
+    width: 30vw;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* flex-direction: column; */
+    gap: 30px;
+    color: red;
+}
+
+#contatos .twitter{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: red;
+
     
 
+}
 
+#contatos .twitter :hover{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    color: var(--cordomenu);
+    transition: 0.7s;
+    text-decoration: none;
+}
 
+#contatos .instagram{
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 100%; */
+    width: 80px;
+    height: 80px;
+    font-size: 3rem;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--fontemenu);
 
+}
+
+#contatos .instagram :hover{
+    background-color: rgb(0, 0, 0);
+    /* border-radius: 100%; */
+    width: 80px;
+    height: 80px;
+    font-size: 3.2rem;;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.7s;
+    color: var(--cordomenu);
+    text-decoration:none;
+}
+
+#contatos .github{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: red ;
+
+    
+
+}
+
+#contatos .github i{
+    color: white;
+}
+
+#contatos .instagram i{
+    color: white;
+}
+
+#contatos .twitter i{
+    color: white;
+}
+
+#contatos .github :hover{
+    width: 80px;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.2rem;
+    color: var(--cordomenu);
+    transition: 0.7s;
+    text-decoration: none;
+}
+
+#contatos .textocontato{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: var(--cordafonte);
+    font-size: 25px;
+    font-family: var(--fonteh1)
+}
+
+.colunaworld{
+        background-color:rgb(114, 74, 50);
+        width: 100px;
+        font-family: var(--fonteh1);
+        font-size: larger;
+        line-height: 40px;
+        margin-bottom: 50px;
+        width: 100vw;
+        max-width: 1000px;
+        text-align: justify;
+        column-gap: 10px;
+        line-height: 40px;  
+
+}
+
+#world .tabelas{
+    display: flex;
+    gap: 400px;
+}
+
+.colunaworld p span{
+    font-size: xx-large;
+    text-shadow:0px 0px 20px red;
+    font-family: var(--fontemenu);
+}
+
+#world p span{
+    text-shadow: 0px 0px 20px black;
+    font-size: larger;
+
+}
+
+#world table{
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 7px;
+    font-size: large;
+    width: 800px;
+}
+
+#world th{
+    color: white;
+    background-color: black;
+    border: 1px solid black;
+    padding: 7px;
+    font-family: var(--fontephome);
+    font-size: 30px;
+
+}
+
+#world td{
+    background-color: rgb(253, 253, 138);
+    border: 1px black solid;
+    padding: 7px;
+    font-family: var(--fonteh1);
+
+}
+
+#world  caption{
+    font-family: var(--fonteh1);
+}
