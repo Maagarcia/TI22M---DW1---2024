@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+
+}
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.box{
+    background-color: blue;
+    height: 500px;
+    width: 500px;
+    padding:10px
+
+
+}
+.perfil{
+    background-color: rgb(245, 245, 105) ;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    padding:5px;
+}
+
+.contatos{
+    background-color: beige;
+    height: 20%;
+    border-bottom: 1px solid gray;
+    display: flex;
+    align-items: center;
+}
+.foto{
+    background-color:rgb(192, 192, 181);
+    height: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foto-box{
+    background-color: aqua;
+    height: 75px;
+    width:75px;
+    border-radius: 100%;
+    background-image:url(https://i.pinimg.com/originals/e5/df/45/e5df457e8de5d0aae37691c00e8a672e.jpg);
+    background-size: 100px;
+    background-position: center;
+}
+
+.mensagem{
+    background-color:burlywood;
+    width: 70%;
+    height: 100%;
+    display: flex;
+}
+

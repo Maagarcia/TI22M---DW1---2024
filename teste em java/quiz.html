@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigmas do Charada</title>
+    <link rel="stylesheet" href="./quiz.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Enigmas do Charada</h1>
+        <form id="riddleForm">
+            <div class="question">
+                <label for="riddle1">Eu começo a noite e termino o dia. O que sou?</label>
+                <input type="text" id="riddle1" name="riddle1" required>
+            </div>
+            <button type="button" onclick="checkAnswers()">Enviar Resposta</button>
+        </form>
+        <p id="resultado"></p>
+    </div>
+    <script src="./quiz.js"></script>
+</body>
+</html>
+
