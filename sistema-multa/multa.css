@@ -1,0 +1,75 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+    height: 60vh;
+    align-items: end;
+    gap: 10px;
+}
+
+.tabela{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(174, 174, 174);
+    height: 300px;
+    width: 600px;
+    padding: 20px;
+    padding-bottom: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
+    justify-content: end;
+}
+
+.tabela input{
+    width: 300px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color:blanchedalmond;
+}
+.tabela button{
+    width: 250px;
+    padding: 10px;
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+
+}
+
+.errado{
+    background-color: red;
+}
+
+.correto{
+    background-color: greenyellow;
+}
+
+.info{
+    display:flex;
+    flex-direction: column;
+    background-color: rgb(176, 176, 176);
+    height: 300px;
+    width: 600px;
+    padding: 15px;
+    padding-top: 50px;
+    border: 1px solid black;
+    border-radius: 10px;
+    gap: 30px;
+}
+
+.info span{
+    font-weight: bold;
+}
+
+.final {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    font-size: xx-large;
+}

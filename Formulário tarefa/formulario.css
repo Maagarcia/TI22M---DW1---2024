@@ -1,0 +1,116 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ES+Deco:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nanum+Gothic&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playwrite+ES+Deco:wght@100..400&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+:root{
+    --fonth1: "Open Sans", sans-serif;
+    --fontp:"Nanum Gothic", sans-serif;
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.container{
+    display: flex;
+    background-color: white;
+    margin:5px;
+}
+
+    
+
+
+.box1{
+    background-color: rgb(255, 255, 255);
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.box2{
+    width: 50%;
+    height: 100vh;
+    border-radius: 5%;
+    background-image: url(https://c1.wallpaperflare.com/preview/527/841/243/code-coding-website-html.jpg);
+}
+.insidebox{
+    background-color: rgb(255, 255, 255);
+    width: 35vw;
+    /* height: 70vh; */
+}
+
+.formulariobase{
+    /* width: 100%; */
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+.formulariobase p{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    letter-spacing: 3px;
+    font-family: var(--fontp);
+}
+.formulariobase h1{
+    text-align: center;
+    font-family: var(--fonth1);
+}
+/* mexe com a estrutura como caixa */
+form{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+/* input mexe com as caixas */
+input{
+    padding: 0.7rem;
+    margin: 10px;
+    font-size: 20px;
+    border: rgb(197, 197, 197) solid 2px;
+}
+
+#continue{
+    background-color: black;
+    border: black;
+    color: wheat;
+}
+.or{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+.consultas{
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+
+.diretriz{
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.icons{
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.icons button{
+    padding: 0.5rem;
+    margin: 10px;
+    font-size: 20px;
+    border: solid gray 1px;
+}
+
+

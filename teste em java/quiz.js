@@ -4,11 +4,17 @@ function checkAnswers() {
 
     const resultElement = document.getElementById("resultado");
 
-    if (userAnswer1 === riddleAnswer1) {
-        resultElement.textContent = "Correto! Você desvendou o enigma.";
-        resultElement.style.color = "green";
-    } else {
-        resultElement.textContent = "Incorreto. Tente novamente.";
-        resultElement.style.color = "red";
-    }
+    // Adiciona um delay de 1 segundo (1000 milissegundos) antes de exibir a resposta
+    setTimeout(function() {
+        if (userAnswer1 === riddleAnswer1) {
+            resultElement.textContent = "Correto! Você desvendou o enigma.";
+            resultElement.style.color = "green";
+        } else {
+            resultElement.textContent = "Incorreto. Tente novamente.";
+            resultElement.style.color = "red";
+        }
+    }, 1000);
 }
+
+
+

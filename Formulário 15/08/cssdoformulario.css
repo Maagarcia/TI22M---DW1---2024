@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 1px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    border: 0.125rem solid red;
+    border-radius: 5%;
+    background-color: lightcoral;
+    padding: 0.5rem;
+    width: 25rem;
+    outline: none;
+
+}
+
+input::placeholder{
+
+    color: rgb(93, 2, 2);
+}
+

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./multa.css">
+    <script src="./multa.js" defer></script>
+</head>
+<body>
+    <div class="container">
+
+        <div class="tabela">
+            <label for="via" >Informe a velocidade máxima da via</label>
+            <input type="number" id="via">
+            <label for="carro">Informe a velocidade do veículo</label>
+            <input type="number" id="carro">
+
+             <button id="calculo"> CALCULAR</button>
+        </div>
+
+        <div class="info">
+
+            <h3>Multa por velocidade</h3>       
+            <p><span>R$ 130,16 </span>- Até 20% acima do limite permitido</p>
+            <p><span>R$ 195,23</span> - De 20% até 50% acima do limite permitido</p>
+            <p><span>R$ 880,41</span> - Acima de 50% do limite permitido</p>
+            
+        </div>
+    </div>
+    <div class="final">
+        <div id="saida"></div>
+    </div>
+</body>
+</html>
