@@ -13,6 +13,7 @@ function Tabuadainwhile(n){
 }
 
 
+Tabuadainwhile(2)
 
 function Tabuadainfor(n){
     resul = n
@@ -28,5 +29,4 @@ function Tabuadainfor(n){
 
 
 
-Tabuadainfor(2)
 Tabuadainfor(4)

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trocar Ícone no Botão</title>
+    <!-- Incluindo Font Awesome para os ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./spotify.css">
+</head>
+<body>
+    <div id="timer">
+        <h1>00:00</h1>
+    </div>
+    <!-- Botão com ícone -->
+    <button id="icone" onclick="trocarIcone()">
+        <i id="icone" class="fas fa-play"></i> Clique Aqui
+    </button>
+
+    <script>
+        function trocarIcone() {
+            // Selecionando o ícone no botão
+            var icone = document.getElementById("icone");
+
+            // Verificando qual ícone está atualmente
+            if (icone.classList.contains("fa-play")) {
+                // Se for o ícone de "play", muda para "pause"
+                icone.classList.remove("fa-play");
+                icone.classList.add("fa-pause");
+            } else {
+                // Se for o ícone de "pause", muda para "play"
+                icone.classList.remove("fa-pause");
+                icone.classList.add("fa-play");
+            }
+        }
+    </script>
+</body>
+</html>
