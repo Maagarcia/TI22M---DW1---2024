@@ -12,6 +12,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-direction: column;
     
 
 }
@@ -31,6 +32,29 @@ button{
     border: 1px solid black;
     padding: 5px;
     
+}
+
+.musicbox{
+    
+    background-color: aqua;
+    width: 100px;
+    height: auto;
+
+}
+.musicbox2{
+    
+    background-color: rgb(234, 255, 0);
+    width: 100px;
+    height: auto;
+
+}
+
+.menu{
+    margin:200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
 }
 
 
