@@ -22,7 +22,7 @@
              <h1 id="timer">00:00:00/00:00:00</h1>
          </div> 
             
-            <button id="iconeBotao" onclick="switche()">
+            <button id="iconeBotao" name='' onclick="switche(this)">
                 <i id="icone" class="bi-play-circle-fill"></i>
             </button>
             
@@ -31,13 +31,17 @@
         </div>
         
         <div class="menu">
-            <div class="musicbox">
+            <div class="musicbox" onclick="musicbox(this)">
                 <p>No suprises</p>
-                <!-- <audio id="musicateste" src="./musicas/Chico Buarque - O Malandro [ ezmp3.cc ].mp3"></audio> -->
+                 <!-- <audio id="musicateste" src="./musicas/No Surprises [ ezmp3.cc ].mp3"></audio>  -->
             </div>
-            <div class="musicbox2">
+            <div class="musicbox" onclick="musicbox(this)">
+                <p>Bôa - Duvet</p>
+                 <audio id="musicateste" src="./musicas/Bôa - Duvet.mp3"></audio> 
+            </div>
+            <div class="musicbox2" onclick="musicbox(this)">
                 <p>O malandro</p>
-                <audio id="musicateste" src="./musicas/Chico Buarque - O Malandro [ ezmp3.cc ].mp3"></audio>
+                <!-- <audio id="musicateste" src="./musicas/Chico Buarque - O Malandro [ ezmp3.cc ].mp3"></audio> -->
             </div>
         </div>
 

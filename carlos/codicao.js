@@ -29,4 +29,11 @@ function Tabuadainfor(n){
 
 
 
-Tabuadainfor(55)
+// Tabuadainfor(55)
+
+function square(x) {
+    return x * x;
+  }
+
+console.log(countVowels("OpenAI")); // Deve exibir: 3
+console.log(countVowels("JavaScript")); // Deve exibir: 3
