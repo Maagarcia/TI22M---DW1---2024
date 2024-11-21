@@ -158,7 +158,104 @@ function teste(texto){
         }
 
     }
-    console.log("--------------------------------")
+    
 }
 
-teste("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,. ")
+// teste("Talvez há coisas que são melhores ocultas...")
+
+
+function criptografiacesar(texto,chave){
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,. '
+    let tamanhoalfabeto = alfabeto.length
+    let tamanho = texto.length
+    let palavra = ''
+    for (i = 0; i<tamanho; i++){
+        for(k = 0; k  < tamanhoalfabeto ; k++){
+            if (texto[i] == alfabeto[k]){
+                if (alfabeto[k+chave] == undefined){
+                    palavra += alfabeto[0+(chave)]
+                }else{
+                    palavra += alfabeto[k+chave]
+                }
+        }
+    }
+
+} 
+console.log(palavra)
+}
+
+
+
+// criptografiacesar("Talvez há coisas que são melhores ocultas...",20)
+// criptografiacesar("ÚuFPyTuBuuwICMuMuKOyuMuIuGyFBILyMuIwOFNuMuuu",-20)
+
+function criptografiacesarchat(texto, chave) {
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,.';
+    let tamanhoalfabeto = alfabeto.length;
+    let palavra = '';
+
+    for (let i = 0; i < texto.length; i++) {
+        let indiceOriginal = alfabeto.indexOf(texto[i]);
+        console.log(indiceOriginal)
+
+        if (indiceOriginal !== -1) {  // Verifica se o caractere existe no alfabeto
+            let novoIndice = (indiceOriginal + chave + tamanhoalfabeto) % tamanhoalfabeto;
+            palavra += alfabeto[novoIndice];
+        } else {
+            palavra += texto[i];  // Se o caractere não está no alfabeto, mantê-lo inalterado
+        }
+    }
+
+    return palavra;
+}
+
+
+
+// console.log(criptografiacesarchat("Hello_World!",1))
+// console.log(criptografiacesarchat("Hello World",-1))
+
+
+
+function criptografiaDefinitiva(texto,chave){
+    let palavra = ''
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,.';
+    for(i=0; i < texto.length;i++){
+        let indice = alfabeto.indexOf(texto[i])
+        // console.log(indice)
+
+        if(indice !== -1){
+            let novoindice = (indice + chave + alfabeto.length) % alfabeto.length
+            palavra += alfabeto[novoindice]
+        } else{
+            palavra += texto[i]
+        }
+    }   
+    // console.log(alfabeto.length)
+    return palavra
+
+}
+console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",1))
+console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",2))
+console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",-1))
+console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",-2))
+
+
+
+
+function minusculo(texto){
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyz'
+    let tamanhoalfabeto = alfabeto.length
+    let count = ''
+    let textu = texto.toLowerCase()
+    for(i = 0; i< textu.length; i++){
+        let indice = alfabeto.indexOf(textu[i])
+        if(indice !== -1){
+            count += alfabeto[indice]
+        }else{
+            count+=textu[i]
+        }
+    }
+    return count
+
+}
+// console.log(minusculo( "MEU PAU TA DURO.."))

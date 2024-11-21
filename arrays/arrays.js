@@ -66,18 +66,23 @@ function inverter2(lista){
 
 function pares(lista){
     let tamanho = lista.length
+    let lista2 = []
 
     for(i = 0; i < tamanho; i++){
         // console.log(lista[i])
         if(lista[i] %2 == 0){
-            console.log(lista[i])
+            lista2.push(lista[i])
         }
-
+        
+        
     }
+    return lista2
+
 
 }
 
-// pares([1,2,3,4,5,6,7,8,9,10])
+console.log(pares([1,2,3,4,5,6,7,8,9,10]))
+console.log(pares([110,11,11,20,15,40]))
 
 function indiceelemento(lista,elemento){
     tamanho = lista.length
@@ -95,7 +100,7 @@ function indiceelemento(lista,elemento){
 
  
 // indiceelemento(["apple","onion", "banana"], "apple")
-// indiceelemento([1,2,3,4,5,6,7,8,9],10)
+// indiceelemento([1,2,3,4,5,6,7,8,9],3)
 //  indiceelemento([1,2,3,4,5,6,7,8,9],4)
 
 function juntar(lista1,lista2){
@@ -149,3 +154,7 @@ function removeduplicata(lista){
 }
 
 // console.log(removeduplicata([1,2,3,3,4,4,5]))
+
+
+
+

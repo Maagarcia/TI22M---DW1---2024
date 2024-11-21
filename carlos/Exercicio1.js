@@ -55,12 +55,12 @@ function primosateN(n){
 
 
 function fatorial(n){
-    maluco = ''
+    maluco = 0
     for(i = n; i > 1; i--)
-        maluco = i * (i-1)
+        maluco += i * (i-1)
 
 
         console.log(maluco)
 }
 
-fatorial(10)
+fatorial(5)

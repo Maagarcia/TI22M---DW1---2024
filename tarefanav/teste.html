@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar Responsiva</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Sofia+Sans:ital,wght@0,1;0,400;0,500;0,600;1,200;1,300&display=swap">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        .topo {
+            background-color: green;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+        }
+
+        .parte1 {
+            padding: 10px;
+            color: antiquewhite;
+            font-size: xx-large;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        ul {
+            display: flex;
+            list-style: none;
+        }
+
+        li {
+            color: antiquewhite;
+            margin: 0 15px;
+            font-size: x-large;
+            font-family: 'Sofia Sans', sans-serif;
+        }
+
+        .texto {
+            margin: 10px;
+            padding: 20px;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        .texto h1 {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .texto p {
+            font-size: 1rem;
+            line-height: 1.5;
+        }
+
+        .hideDesktop {
+            display: none;
+        }
+
+        @media (max-width: 1050px) {
+            ul {
+                display: none; 
+            }
+            
+            .hideDesktop {
+                display: block; 
+                cursor: pointer;
+                color: antiquewhite;
+            }
+            
+            .showMenu {
+                display: flex;
+                flex-direction: column;
+                gap: 15px;
+                background-color: green;
+                position: absolute;
+                top: 100px;
+                width: 100%;
+                left: 0;
+                padding: 20px 0;
+                text-align: center;
+                z-index: 1;
+                height:100%;
+            }
+
+            li {
+                margin: 20px 0;
+                list-style: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="topo">
+        <div class="parte1">
+            Logo
+        </div>
+        <div class="parte2">
+            <!-- Menu de navegação -->
+            <ul id="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contatos</a></li>
+            </ul>
+            <div id="hamburgerIcon" class="hideDesktop">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+                    <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+    <div class="texto">
+        <h1>Navbar Responsiva</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima laudantium mollitia eligendi id accusantium necessitatibus recusandae, justo labore pariatur provident quas magni doloremque commodi adipisci reiciendis. Architecto eaque animi consectetur?</p>
+    </div>
+
+    <script>
+        // JavaScript para abrir e fechar o menu
+        document.addEventListener("DOMContentLoaded", function() {
+            const hamburgerIcon = document.getElementById("hamburgerIcon");
+            const menu = document.getElementById("menu");
+
+            hamburgerIcon.addEventListener("click", function(event) {
+                event.preventDefault();
+                menu.classList.toggle("showMenu"); // Alterna entre mostrar/esconder o menu
+            });
+        });
+    </script>
+</body>
+</html>

@@ -59,21 +59,30 @@
 let audio = document.getElementById('meuAudio');
 let isPlaying = false;
 let intervalID;
+let currentAudio = null
 
 // Função para alternar o ícone e o estado do áudio/cronômetro
 function switche() {
     var icone = document.getElementById("icone");
+    
+    // currentAudio = true
+    if (currentAudio){
 
-    if (isPlaying) {
-        // Se o áudio estiver tocando, pausa
-        icone.classList.remove("bi-pause-circle-fill");
-        icone.classList.add("bi-play-circle-fill");
-        pauseAudio();
-    } else {
-        // Se o áudio estiver pausado, toca
-        icone.classList.remove("bi-play-circle-fill");
-        icone.classList.add("bi-pause-circle-fill");
-        playAudio();
+        if (isPlaying) {
+            // Se o áudio estiver tocando, pausa
+            // currentAudio.currentTime = 0;
+            icone.classList.remove("bi-pause-circle-fill");
+            icone.classList.add("bi-play-circle-fill");
+            pauseAudio();
+        } else {
+            // Se o áudio estiver pausado, toca
+            // currentAudio.play(); 
+            icone.classList.remove("bi-play-circle-fill");
+            icone.classList.add("bi-pause-circle-fill");
+            playAudio();
+        }
+
+
     }
 }
 
@@ -93,15 +102,18 @@ function pauseAudio() {
 
 // Função para atualizar o cronômetro com o tempo do áudio
 function updateTimer() {
-    let currentTime = musicateste.currentTime;  // Pega o tempo atual do áudio em segundos
-    let duration = musicateste.duration;  // Pega a duração total do áudio em segundos
-    document.getElementById("timer").textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+
+    if (currentAudio){
+
+        let currentTime = musicateste.currentTime;  // Pega o tempo atual do áudio em segundos
+        let duration = musicateste.duration;  // Pega a duração total do áudio em segundos
+        document.getElementById("timer").textContent = `${formatTime(currentTime)} / ${formatTime(duration)}`;
+
+    }
 }
 
 function alterarVolume(valor) {
          document.getElementById("musicateste").volume = valor;
-     
-
 }
 
 
@@ -114,8 +126,35 @@ function formatTime(seconds) {
     return `${hrs.toString().padStart(2, '0')}:${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
 }
 
-function musicbox(div){
-    isPlaying = false
-    div.queryselector("audio")
+function setMusicPlayer(divElement){
+    // currentAudio = true
+    if (currentAudio) {
+        currentAudio.removeAttribute('id');
+        currentAudio.pause();
+        
+        }
+
+    let audioElement = divElement.querySelector('audio');
+    audioElement.id = 'musicateste';  // Atribui o ID "musicateste"
+    currentAudio = audioElement;
+
     
+    
+    currentAudio.play();
+    
+    
+    currentAudio.currentTime = 0;
+    
+
+    if (icone.classList.contains('bi-play-circle-fill')) {
+        icone.classList.remove('bi-play-circle-fill');
+        icone.classList.add('bi-pause-circle-fill');
+    }
+
+
+    if (icone.contains('bi-pause-circle-fill')) {
+        icone.remove('bi-pause-circle-fill');
+        icone.add('bi-play-circle-fill');
+    }
 }
+
