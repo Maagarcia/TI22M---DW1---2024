@@ -153,7 +153,7 @@ function removeduplicata(lista){
 
 }
 
-// console.log(removeduplicata([1,2,3,3,4,4,5]))
+console.log(removeduplicata([1,2,3,3,4,4,5]))
 
 
 

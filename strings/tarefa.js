@@ -214,30 +214,39 @@ function criptografiacesarchat(texto, chave) {
 // console.log(criptografiacesarchat("Hello_World!",1))
 // console.log(criptografiacesarchat("Hello World",-1))
 
-
+//ABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,.'
 
 function criptografiaDefinitiva(texto,chave){
     let palavra = ''
-    let alfabeto = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,.';
-    for(i=0; i < texto.length;i++){
-        let indice = alfabeto.indexOf(texto[i])
+    let alfabeto = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!?áãÃéíóõúÉÍÓÚÕÁ,.'
+    let texto2 = texto.toLowerCase()
+    for(i=0; i < texto2.length;i++){
+        let indice = alfabeto.indexOf(texto2[i])
         // console.log(indice)
 
         if(indice !== -1){
             let novoindice = (indice + chave + alfabeto.length) % alfabeto.length
             palavra += alfabeto[novoindice]
         } else{
-            palavra += texto[i]
+            palavra += texto2[i]
         }
     }   
     // console.log(alfabeto.length)
     return palavra
 
 }
-console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",1))
-console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",2))
-console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",-1))
-console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",-2))
+// console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",1))
+// console.log(criptografiaDefinitiva(`I decided to anything that lives inside of you
+// I would never ever lie to you, yeah
+// You ain't never gotta lie to me
+// I'm everything that I strive to be
+// So do I look like him?`,8))
+console.log(criptografiaDefinitiva(`She eyes me like a pisces when I am weak
+I've been locked inside your heart-shaped box for weeks
+I've been drawn into your magnet tar pit trap
+I wish I could eat your cancer when you turn black`,5))
+// console.log(criptografiaDefinitiva("Foi preciso, encontrar na casa de carnes",-2))
+
 
 
 

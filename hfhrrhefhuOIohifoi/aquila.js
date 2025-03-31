@@ -68,7 +68,7 @@ function switche() {
     // currentAudio = true
     if (currentAudio){
 
-        if (isPlaying) {
+        if (isPlaying) { 
             // Se o áudio estiver tocando, pausa
             // currentAudio.currentTime = 0;
             icone.classList.remove("bi-pause-circle-fill");
