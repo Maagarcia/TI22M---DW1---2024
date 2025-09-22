@@ -103,16 +103,16 @@ function multiplicamatriz(x,y){
     return matrizmultipla
 
 }
-// console.log(multiplicamatriz(
-//  [  [1,3,4]] // 1x3
-//  ,[[1,2],[3,4], [5,6]], // 3x2
-// // 
-// ));
+console.log(multiplicamatriz(
+ [  [1,3,4]] // 1x3
+ ,[[1,2],[3,4], [5,6]], // 3x2
+// 
+));
 
-// console.log(multiplicamatriz(
-//     [[1,2],[2,3]],
-//     [[23,4] , [1,4]]
-// ))
+console.log(multiplicamatriz(
+    [[1,2],[2,3]],
+    [[23,4] , [1,4]]
+))
 console.log(multiplicamatriz(
     [[1,2,3],[6,4,5]], //2x3
     [[4],[5],[-1]] //3x1

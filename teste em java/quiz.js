@@ -1,5 +1,5 @@
 function checkAnswers() {
-    const riddleAnswer1 = "a letra n"; // Defina a resposta correta aqui
+    const riddleAnswer1 = "a letra r"; // Defina a resposta correta aqui
     const userAnswer1 = document.getElementById("riddle1").value.trim().toLowerCase();
 
     const resultElement = document.getElementById("resultado");

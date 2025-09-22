@@ -3,12 +3,12 @@
     margin: 1px;
     box-sizing: border-box;
     scroll-behavior: smooth;
+    
 }
 
 form{
     display: flex;
     flex-direction: column;
-
 }
 
 input{
